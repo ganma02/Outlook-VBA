@@ -1,2 +1,2 @@
 # Outlook-VBA
-Some automation scripts using VBA for Outlook
+Some automation scripts used in my work with Outlook and Excel.
