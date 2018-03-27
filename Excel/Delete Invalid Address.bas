@@ -12,13 +12,13 @@ Dim blnCreated As Boolean
 Dim i As Integer
 Dim FoldersArray As Variant
 
-Sheets("invalid_address").Select
+    Sheets("sheet_name").Select
 
     On Error Resume Next
    Set olApp = CreateObject("Outlook.Application")
    Set olNs = olApp.GetNamespace("MAPI")
     
-   FolderPath = "anas@dunndealpr.com\Contacts\database copy (for verifying)"
+            FolderPath = "anas@example.com\Contacts\folder"
    FoldersArray = Split(FolderPath, "\")
     Set cFolder = olApp.Session.Folders.Item(FoldersArray(0))
     If Not cFolder Is Nothing Then
